@@ -1,0 +1,60 @@
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: "Roboto" !important;
+}
+
+body {
+    min-height: 100%;
+    margin-bottom: 50px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.deleteForm {
+    display: inline;
+}
+
+#map {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+}
+
+footer {
+    /* background-color: #f8f9fa; */
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+footer p {
+    padding-top: 1rem;
+}
+
+.form {
+    width: 30%;
+    margin: 20px auto;
+}
+
+@media(max-width: 992px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    #map {
+        margin-bottom: 20rem;
+    }
+    .form {
+        width: 80%;
+    }
+}
+
+

@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="ui container text main segment">
+    <h2>Add Anime</h2>
+    <form action="/animes" method="POST" class="ui form">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="anime[title]" placeholder="title">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="anime[image]" placeholder="image">
+        </div>
+        <div class="field">
+            <label>Description</label>
+            <input type="text" name="anime[body]" placeholder="description">
+        </div>
+        <div class="field">
+            <label>Rating</label>
+            <input type="number" name="anime[rating]" placeholder="rating" min="1" max="10">
+        </div>
+        <input type="submit" value="Submit" class="ui button blue">
+    </form>
+</div>
+
+<%- include("partials/footer") %>

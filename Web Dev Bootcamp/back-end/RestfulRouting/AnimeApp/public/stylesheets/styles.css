@@ -1,0 +1,11 @@
+.container.main {
+    margin-top: 7em;
+}
+
+i.film {
+    font-size: 2em;
+}
+
+form {
+    display: inline;
+}

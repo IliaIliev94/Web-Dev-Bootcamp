@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="ui main container segment text">
+    <div class="ui header">
+        <h1><%= anime.title %></h1>
+    </div>
+        <div class="ui top attached">
+                <div class="item">
+                    <div class="image">
+                        <img src="<%= anime.image %>" alt="" class="ui centered image rounded">
+                    </div>
+                    <div class="content">
+                        <p>Rating: <%= anime.rating %></p>
+                    </div>
+                    <div class="description">
+                        <p><%- anime.body %></p>
+                    </div>
+                </div>
+            </div>
+            <a href="/animes/<%= anime._id %>/edit" class="ui button basic orange">Edit</a>
+            <form action="/animes/<%= anime._id %>?_method=DELETE" method="POST">
+                <button type="submit" class="ui button basic red">Delete</button>
+            </form>
+</div>
+
+<%- include("partials/footer") %>

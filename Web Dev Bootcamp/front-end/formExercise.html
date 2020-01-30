@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercises</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="first-name">First Name:</label>
+			<input type="text" name="first-name" id="first-name" placeholder="John" required>
+			<label id="last-name">Last Name:</label>
+			<input type="text" name="last-name" id="last-name" placeholder="Smith" required>
+		</div>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" value="male" id="male">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" value="female" id="female">
+			<label for="other">Other</label>
+			<input type="radio" name="gender" value="other" id="other">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="your email" required>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="your password" minlength="5" maxlength="10">
+		</div>
+		<div>
+			<label>Birthday:</label>
+			<select name="month">Month
+				<option>January</option>
+				<option>Febuary</option>
+				<option>March</option>
+			</select>
+			<select name="day">Day
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+			</select>
+			<select name="year">Year
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+			</select>
+		</div>
+		<div>
+			<label id="conditions">I agree to the terms and conditions</label>
+			<input type="radio" name="conditions" id="conditions">
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+	dv
+
+</body>
+</html>
